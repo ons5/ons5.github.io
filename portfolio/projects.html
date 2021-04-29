@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Comm Lab Projects</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="home">HOME</a>
+    <div class="dropdown">
+      <div class="dropbtn active" >PROJECTS 
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="index.html" class="active">COMMUNICATIONS LAB</a>
+      </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+  <!-- Flickity HTML -->
+  <div class="gallery js-flickity"
+    data-flickity-options='{ "wrapAround": false , "prevNextButtons": false, "draggable": false, "pageDots": true}'>
+    <!-- SLIDE 1 -->
+    <div class="gallery-cell">
+      <h2> ~ MOVING FORWARD ~
+        <div class="info" onclick="pu('i1')">&#9432
+          <span class="info-content" id="i1">
+              <p>This is a part of the 30-minute film festival from the Comm Lab course.</br>
+              The project was done individually.</br> </br>
+              You can find a link to the documentation <a href="https://docs.google.com/document/d/1yjpTX-KU_qu4NpJoVPsPOxP4v8TT_fJeTyDwOKPdsOI/edit" target="_blank">here</a>.</p>
+          </span>
+        </div>
+      </h2>
+      <img  src="media/thumbnail1.png" onclick="window.open('https://ons5.github.io/30MFF','_blank')" >
+    </div>
+    <!-- SLIDE 2 -->
+    <div class="gallery-cell">
+      <h2> ~ A PIECE OF DREAMY CAKE ~
+        <div class="info" onclick="pu('i2')">&#9432
+          <span class="info-content" id="i2">
+              <p>This projects aims to tell a story with images.<br>
+              Group Members:<br> Ilya Akimov,<br> Shaurya Singh,<br> Shamma Almnoosri and, <br> Ons Taktak.<br></br>
+              You can find a link to the documentation <a href="https://docs.google.com/document/d/12x9Fl2DOClBNpaIs7llIsG_SmOLZuW1vt7Vy9bfVzFQ/edit" target="_blank">here</a>.</p>
+            </span>
+        </div>
+      </h2>
+      <img src="media/thumbnail2.png" onclick="window.open('https://shaurya-io.github.io/comicdreamycake/index.html','_blank')">
+    </div>
+    <!-- SLIDE 3 -->
+    <div class="gallery-cell">
+      <h2> ~ JENNIFER'S WRATH ~
+        <div class="info" onclick="pu('i3')">&#9432
+          <span class="info-content" id="i3">
+              <p>This projects aims to tell a story with sounds.<br>
+              Group Members:<br> Sarah Al-Yahya,<br> Deborah Agboola and, <br> Ons Taktak.<br></br>
+              You can find a link to the documentation <a href="https://docs.google.com/document/d/1DcfiI5MQ4pcGMkp-bEek-6blUxWTTxYqh70cJvjV2jM/edit" target="_blank">here</a>.</p>
+            </span>
+        </div>
+      </h2>
+      <img src="media/thumbnail3.png" onclick="window.open('https://ons-taktak.github.io/','_blank')">
+    </div>
+    <!-- SLIDE 4 -->
+    <div class="gallery-cell">
+      <h2> ~ NEW LIFE ON EARTH ~
+        <div class="info" onclick="pu('i4')">&#9432
+          <span class="info-content" id="i4">
+              <p>This projects aims to tell a story with videos.<br>
+              Group Members:<br> Sarah Al-Yahya,<br> Ilya Akimov,<br> Ishika Menrai and, <br> Ons Taktak.<br></br>
+              You can find a link to the documentation <a href="https://docs.google.com/document/d/18p7Jr1b69NQsFREfeuiN7hP0SvfP-0vxGv4dvdHl2t4/edit" target="_blank">here</a>.</p>
+            </span>
+        </div>
+      </h2>
+      <img src="media/thumbnail4.png" onclick="window.open('https://sarahalyahya.github.io/Assignment%204%20-%20Kovid/index.html','_blank')">
+    </div>
+  </div>
+
+
+
+  <!-- Flickity js -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+  <script  src="./script.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } 
+      else {
+        x.className = "topnav";
+      }
+    }
+
+    function pu(n) {
+      var popup = document.getElementById(n);
+      popup.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
